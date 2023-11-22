@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:5173/",
+      "webRoot": "${workspaceFolder}/app/src",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "NestJS Debug",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/api/src/main.ts",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "posts-api", "run", "start:debug"],
+      "outFiles": ["${workspaceFolder}/api/dist/**/*.js"]
+    }
+  ]
+}

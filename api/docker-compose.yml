@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  # Ensure environment variables DB_PORT, DB_USER, DB_PASSWORD are set in .env file.
+  #
+  # To access the db in the docker
+  # - DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@postgres/
+  # To access the db in outside the docker
+  # - DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@localhost:${DB_PORT}/
+
+  db:
+    image: postgres:15-alpine
+    restart: always
+    container_name: postgres-for-posts-api
+    ports:
+      - '${DB_PORT}:5432' # HOST_PORT:CONTAINER_PORT
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}

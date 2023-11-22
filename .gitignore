@@ -1,0 +1,52 @@
+# General dependencies
+**/node_modules/
+**/.pnp
+**/.pnp.js
+
+# Build outputs
+**/out/
+**/build/
+**/dist/
+**/dist-ssr/
+
+# Testing
+**/coverage/
+**/.nyc_output
+
+# TypeScript
+**/*.tsbuildinfo
+**/next-env.d.ts
+
+# Environment and config files
+*.pem
+**/.env*.local
+.env
+.env.dev
+.env.prod
+.env.test
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+**/*.log
+**/logs
+
+# OS files
+.DS_Store
+
+# Editor configurations and project files
+**/.idea
+**/.project
+**/.classpath
+**/.c9/
+**/*.launch
+**/.settings/
+**/*.sublime-workspace
+.vscode/*
+.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

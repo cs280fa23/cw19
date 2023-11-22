@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-vscode.js-debug-nightly",
+    "dbaeumer.vscode-eslint",
+    "mhutchie.git-graph",
+    "heybourn.headwind",
+    "esbenp.prettier-vscode",
+    "kalimahapps.tailwind-config-viewer",
+    "bradlc.vscode-tailwindcss",
+    "austenc.tailwind-docs"
+  ]
+}
