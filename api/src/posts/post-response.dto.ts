@@ -5,5 +5,4 @@ export class PostResponseDto {
   image?: string;
   likeCount: number;
   commentCount: number;
-  userId: number;
 }
